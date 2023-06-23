@@ -25,6 +25,6 @@ RUN apt-get -y update && apt-get -y --no-install-recommends install make gcc gfo
 ADD scripts/*.r /usr/local/bin/
 RUN chmod +x /usr/local/bin/*.r
 
-# Add testing to container
+# Add testing to container by copying over the shell script
 ADD runTest1.sh /usr/local/bin/runTest1.sh
 
